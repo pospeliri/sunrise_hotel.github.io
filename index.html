@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Template Basic Images End -->
+	<!-- Bootstrap (latest) Grid Styles Only -->
+	
+	<!-- Header Bootstrap -->
+	<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.fade{opacity:0;-webkit-transition:opacity .15s linear;-o-transition:opacity .15s linear;transition:opacity .15s linear}.fade.in{opacity:1}.collapse{display:none}.collapse.in{display:block}tr.collapse.in{display:table-row}tbody.collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height, visibility;-o-transition-property:height, visibility;transition-property:height, visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:4px dashed;border-top:4px solid \9;border-right:4px solid transparent;border-left:4px solid transparent}.dropup,.dropdown{position:relative}.dropdown-toggle:focus{outline:0}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;list-style:none;font-size:14px;text-align:left;background-color:#fff;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);box-shadow:0 6px 12px rgba(0,0,0,0.175);-webkit-background-clip:padding-box;background-clip:padding-box}.dropdown-menu.pull-right{right:0;left:auto}.dropdown-menu .divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}.dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:normal;line-height:1.42857143;color:#333;white-space:nowrap}.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus{text-decoration:none;color:#262626;background-color:#f5f5f5}.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{color:#fff;text-decoration:none;outline:0;background-color:#337ab7}.dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{color:#777}.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{text-decoration:none;background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);cursor:not-allowed}.open>.dropdown-menu{display:block}.open>a{outline:0}.dropdown-menu-right{left:auto;right:0}.dropdown-menu-left{left:0;right:auto}.dropdown-header{display:block;padding:3px 20px;font-size:12px;line-height:1.42857143;color:#777;white-space:nowrap}.dropdown-backdrop{position:fixed;left:0;right:0;bottom:0;top:0;z-index:990}.pull-right>.dropdown-menu{right:0;left:auto}.dropup .caret,.navbar-fixed-bottom .dropdown .caret{border-top:0;border-bottom:4px dashed;border-bottom:4px solid \9;content:""}.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:2px}@media (min-width:768px){.navbar-right .dropdown-menu{left:auto;right:0}.navbar-right .dropdown-menu-left{left:0;right:auto}}.carousel{position:relative}.carousel-inner{position:relative;overflow:hidden;width:100%}.carousel-inner>.item{display:none;position:relative;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}.carousel-inner>.item>img,.carousel-inner>.item>a>img{line-height:1}@media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.item{-webkit-transition:-webkit-transform 0.6s ease-in-out;-o-transition:-o-transform 0.6s ease-in-out;transition:transform 0.6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}.carousel-inner>.item.next,.carousel-inner>.item.active.right{-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0);left:0}.carousel-inner>.item.prev,.carousel-inner>.item.active.left{-webkit-transform:translate3d(-100%, 0, 0);transform:translate3d(-100%, 0, 0);left:0}.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right,.carousel-inner>.item.active{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);left:0}}.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}.carousel-inner>.active{left:0}.carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}.carousel-inner>.next{left:100%}.carousel-inner>.prev{left:-100%}.carousel-inner>.next.left,.carousel-inner>.prev.right{left:0}.carousel-inner>.active.left{left:-100%}.carousel-inner>.active.right{left:100%}.carousel-control{position:absolute;top:0;left:0;bottom:0;width:15%;opacity:.5;filter:alpha(opacity=50);font-size:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,0.6);background-color:rgba(0,0,0,0)}.carousel-control.left{background-image:-webkit-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);background-image:-o-linear-gradient(left, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);background-image:-webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,0.5)), to(rgba(0,0,0,0.0001)));background-image:linear-gradient(to right, rgba(0,0,0,0.5) 0, rgba(0,0,0,0.0001) 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)}.carousel-control.right{left:auto;right:0;background-image:-webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);background-image:-o-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);background-image:-webkit-gradient(linear, left top, right top, color-stop(0, rgba(0,0,0,0.0001)), to(rgba(0,0,0,0.5)));background-image:linear-gradient(to right, rgba(0,0,0,0.0001) 0, rgba(0,0,0,0.5) 100%);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)}.carousel-control:hover,.carousel-control:focus{outline:0;color:#fff;text-decoration:none;opacity:.9;filter:alpha(opacity=90)}.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right{position:absolute;top:50%;margin-top:-10px;z-index:5;display:inline-block}.carousel-control .icon-prev,.carousel-control .glyphicon-chevron-left{left:50%;margin-left:-10px}.carousel-control .icon-next,.carousel-control .glyphicon-chevron-right{right:50%;margin-right:-10px}.carousel-control .icon-prev,.carousel-control .icon-next{width:20px;height:20px;line-height:1;font-family:serif}.carousel-control .icon-prev:before{content:'\2039'}.carousel-control .icon-next:before{content:'\203a'}.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;margin-left:-30%;padding-left:0;list-style:none;text-align:center}.carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;border:1px solid #fff;border-radius:10px;cursor:pointer;background-color:#000 \9;background-color:rgba(0,0,0,0)}.carousel-indicators .active{margin:0;width:12px;height:12px;background-color:#fff}.carousel-caption{position:absolute;left:15%;right:15%;bottom:20px;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,0.6)}.carousel-caption .btn{text-shadow:none}@media screen and (min-width:768px){.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{width:30px;height:30px;margin-top:-10px;font-size:30px}.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{margin-left:-10px}.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-10px}.carousel-caption{left:20%;right:20%;padding-bottom:30px}.carousel-indicators{bottom:20px}}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}</style>
+	<!-- Header Bootstrap JS-->
+	<script>if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires jQuery");+function(t){"use strict";var e=t.fn.jquery.split(" ")[0].split(".");if(e[0]<2&&e[1]<9||1==e[0]&&9==e[1]&&e[2]<1||e[0]>3)throw new Error("Bootstrap's JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4")}(jQuery),+function(t){"use strict";function e(e){return this.each(function(){var s=t(this),n=s.data("bs.carousel"),o=t.extend({},i.DEFAULTS,s.data(),"object"==typeof e&&e),a="string"==typeof e?e:o.slide;n||s.data("bs.carousel",n=new i(this,o)),"number"==typeof e?n.to(e):a?n[a]():o.interval&&n.pause().cycle()})}var i=function(e,i){this.$element=t(e),this.$indicators=this.$element.find(".carousel-indicators"),this.options=i,this.paused=null,this.sliding=null,this.interval=null,this.$active=null,this.$items=null,this.options.keyboard&&this.$element.on("keydown.bs.carousel",t.proxy(this.keydown,this)),"hover"==this.options.pause&&!("ontouchstart"in document.documentElement)&&this.$element.on("mouseenter.bs.carousel",t.proxy(this.pause,this)).on("mouseleave.bs.carousel",t.proxy(this.cycle,this))};i.VERSION="3.3.7",i.TRANSITION_DURATION=600,i.DEFAULTS={interval:5e3,pause:"hover",wrap:!0,keyboard:!0},i.prototype.keydown=function(t){if(!/input|textarea/i.test(t.target.tagName)){switch(t.which){case 37:this.prev();break;case 39:this.next();break;default:return}t.preventDefault()}},i.prototype.cycle=function(e){return e||(this.paused=!1),this.interval&&clearInterval(this.interval),this.options.interval&&!this.paused&&(this.interval=setInterval(t.proxy(this.next,this),this.options.interval)),this},i.prototype.getItemIndex=function(t){return this.$items=t.parent().children(".item"),this.$items.index(t||this.$active)},i.prototype.getItemForDirection=function(t,e){var i=this.getItemIndex(e),s="prev"==t&&0===i||"next"==t&&i==this.$items.length-1;if(s&&!this.options.wrap)return e;var n="prev"==t?-1:1,o=(i+n)%this.$items.length;return this.$items.eq(o)},i.prototype.to=function(t){var e=this,i=this.getItemIndex(this.$active=this.$element.find(".item.active"));return t>this.$items.length-1||0>t?void 0:this.sliding?this.$element.one("slid.bs.carousel",function(){e.to(t)}):i==t?this.pause().cycle():this.slide(t>i?"next":"prev",this.$items.eq(t))},i.prototype.pause=function(e){return e||(this.paused=!0),this.$element.find(".next, .prev").length&&t.support.transition&&(this.$element.trigger(t.support.transition.end),this.cycle(!0)),this.interval=clearInterval(this.interval),this},i.prototype.next=function(){return this.sliding?void 0:this.slide("next")},i.prototype.prev=function(){return this.sliding?void 0:this.slide("prev")},i.prototype.slide=function(e,s){var n=this.$element.find(".item.active"),o=s||this.getItemForDirection(e,n),a=this.interval,r="next"==e?"left":"right",l=this;if(o.hasClass("active"))return this.sliding=!1;var h=o[0],d=t.Event("slide.bs.carousel",{relatedTarget:h,direction:r});if(this.$element.trigger(d),!d.isDefaultPrevented()){if(this.sliding=!0,a&&this.pause(),this.$indicators.length){this.$indicators.find(".active").removeClass("active");var c=t(this.$indicators.children()[this.getItemIndex(o)]);c&&c.addClass("active")}var p=t.Event("slid.bs.carousel",{relatedTarget:h,direction:r});return t.support.transition&&this.$element.hasClass("slide")?(o.addClass(e),o[0].offsetWidth,n.addClass(r),o.addClass(r),n.one("bsTransitionEnd",function(){o.removeClass([e,r].join(" ")).addClass("active"),n.removeClass(["active",r].join(" ")),l.sliding=!1,setTimeout(function(){l.$element.trigger(p)},0)}).emulateTransitionEnd(i.TRANSITION_DURATION)):(n.removeClass("active"),o.addClass("active"),this.sliding=!1,this.$element.trigger(p)),a&&this.cycle(),this}};var s=t.fn.carousel;t.fn.carousel=e,t.fn.carousel.Constructor=i,t.fn.carousel.noConflict=function(){return t.fn.carousel=s,this};var n=function(i){var s,n=t(this),o=t(n.attr("data-target")||(s=n.attr("href"))&&s.replace(/.*(?=#[^\s]+$)/,""));if(o.hasClass("carousel")){var a=t.extend({},o.data(),n.data()),r=n.attr("data-slide-to");r&&(a.interval=!1),e.call(o,a),r&&o.data("bs.carousel").to(r),i.preventDefault()}};t(document).on("click.bs.carousel.data-api","[data-slide]",n).on("click.bs.carousel.data-api","[data-slide-to]",n),t(window).on("load",function(){t('[data-ride="carousel"]').each(function(){var i=t(this);e.call(i,i.data())})})}(jQuery),+function(t){"use strict";function e(e){return this.each(function(){var s=t(this),n=s.data("bs.affix"),o="object"==typeof e&&e;n||s.data("bs.affix",n=new i(this,o)),"string"==typeof e&&n[e]()})}var i=function(e,s){this.options=t.extend({},i.DEFAULTS,s),this.$target=t(this.options.target).on("scroll.bs.affix.data-api",t.proxy(this.checkPosition,this)).on("click.bs.affix.data-api",t.proxy(this.checkPositionWithEventLoop,this)),this.$element=t(e),this.affixed=null,this.unpin=null,this.pinnedOffset=null,this.checkPosition()};i.VERSION="3.3.7",i.RESET="affix affix-top affix-bottom",i.DEFAULTS={offset:0,target:window},i.prototype.getState=function(t,e,i,s){var n=this.$target.scrollTop(),o=this.$element.offset(),a=this.$target.height();if(null!=i&&"top"==this.affixed)return i>n?"top":!1;if("bottom"==this.affixed)return null!=i?n+this.unpin<=o.top?!1:"bottom":t-s>=n+a?!1:"bottom";var r=null==this.affixed,l=r?n:o.top,h=r?a:e;return null!=i&&i>=n?"top":null!=s&&l+h>=t-s?"bottom":!1},i.prototype.getPinnedOffset=function(){if(this.pinnedOffset)return this.pinnedOffset;this.$element.removeClass(i.RESET).addClass("affix");var t=this.$target.scrollTop(),e=this.$element.offset();return this.pinnedOffset=e.top-t},i.prototype.checkPositionWithEventLoop=function(){setTimeout(t.proxy(this.checkPosition,this),1)},i.prototype.checkPosition=function(){if(this.$element.is(":visible")){var e=this.$element.height(),s=this.options.offset,n=s.top,o=s.bottom,a=Math.max(t(document).height(),t(document.body).height());"object"!=typeof s&&(o=n=s),"function"==typeof n&&(n=s.top(this.$element)),"function"==typeof o&&(o=s.bottom(this.$element));var r=this.getState(a,e,n,o);if(this.affixed!=r){null!=this.unpin&&this.$element.css("top","");var l="affix"+(r?"-"+r:""),h=t.Event(l+".bs.affix");if(this.$element.trigger(h),h.isDefaultPrevented())return;this.affixed=r,this.unpin="bottom"==r?this.getPinnedOffset():null,this.$element.removeClass(i.RESET).addClass(l).trigger(l.replace("affix","affixed")+".bs.affix")}"bottom"==r&&this.$element.offset({top:a-e-o})}};var s=t.fn.affix;t.fn.affix=e,t.fn.affix.Constructor=i,t.fn.affix.noConflict=function(){return t.fn.affix=s,this},t(window).on("load",function(){t('[data-spy="affix"]').each(function(){var i=t(this),s=i.data();s.offset=s.offset||{},null!=s.offsetBottom&&(s.offset.bottom=s.offsetBottom),null!=s.offsetTop&&(s.offset.top=s.offsetTop),e.call(i,s)})})}(jQuery),+function(t){"use strict";function e(e){var i,s=e.attr("data-target")||(i=e.attr("href"))&&i.replace(/.*(?=#[^\s]+$)/,"");return t(s)}function i(e){return this.each(function(){var i=t(this),n=i.data("bs.collapse"),o=t.extend({},s.DEFAULTS,i.data(),"object"==typeof e&&e);!n&&o.toggle&&/show|hide/.test(e)&&(o.toggle=!1),n||i.data("bs.collapse",n=new s(this,o)),"string"==typeof e&&n[e]()})}var s=function(e,i){this.$element=t(e),this.options=t.extend({},s.DEFAULTS,i),this.$trigger=t('[data-toggle="collapse"][href="#'+e.id+'"],[data-toggle="collapse"][data-target="#'+e.id+'"]'),this.transitioning=null,this.options.parent?this.$parent=this.getParent():this.addAriaAndCollapsedClass(this.$element,this.$trigger),this.options.toggle&&this.toggle()};s.VERSION="3.3.7",s.TRANSITION_DURATION=350,s.DEFAULTS={toggle:!0},s.prototype.dimension=function(){var t=this.$element.hasClass("width");return t?"width":"height"},s.prototype.show=function(){if(!this.transitioning&&!this.$element.hasClass("in")){var e,n=this.$parent&&this.$parent.children(".panel").children(".in, .collapsing");if(!(n&&n.length&&(e=n.data("bs.collapse"),e&&e.transitioning))){var o=t.Event("show.bs.collapse");if(this.$element.trigger(o),!o.isDefaultPrevented()){n&&n.length&&(i.call(n,"hide"),e||n.data("bs.collapse",null));var a=this.dimension();this.$element.removeClass("collapse").addClass("collapsing")[a](0).attr("aria-expanded",!0),this.$trigger.removeClass("collapsed").attr("aria-expanded",!0),this.transitioning=1;var r=function(){this.$element.removeClass("collapsing").addClass("collapse in")[a](""),this.transitioning=0,this.$element.trigger("shown.bs.collapse")};if(!t.support.transition)return r.call(this);var l=t.camelCase(["scroll",a].join("-"));this.$element.one("bsTransitionEnd",t.proxy(r,this)).emulateTransitionEnd(s.TRANSITION_DURATION)[a](this.$element[0][l])}}}},s.prototype.hide=function(){if(!this.transitioning&&this.$element.hasClass("in")){var e=t.Event("hide.bs.collapse");if(this.$element.trigger(e),!e.isDefaultPrevented()){var i=this.dimension();this.$element[i](this.$element[i]())[0].offsetHeight,this.$element.addClass("collapsing").removeClass("collapse in").attr("aria-expanded",!1),this.$trigger.addClass("collapsed").attr("aria-expanded",!1),this.transitioning=1;var n=function(){this.transitioning=0,this.$element.removeClass("collapsing").addClass("collapse").trigger("hidden.bs.collapse")};return t.support.transition?void this.$element[i](0).one("bsTransitionEnd",t.proxy(n,this)).emulateTransitionEnd(s.TRANSITION_DURATION):n.call(this)}}},s.prototype.toggle=function(){this[this.$element.hasClass("in")?"hide":"show"]()},s.prototype.getParent=function(){return t(this.options.parent).find('[data-toggle="collapse"][data-parent="'+this.options.parent+'"]').each(t.proxy(function(i,s){var n=t(s);this.addAriaAndCollapsedClass(e(n),n)},this)).end()},s.prototype.addAriaAndCollapsedClass=function(t,e){var i=t.hasClass("in");t.attr("aria-expanded",i),e.toggleClass("collapsed",!i).attr("aria-expanded",i)};var n=t.fn.collapse;t.fn.collapse=i,t.fn.collapse.Constructor=s,t.fn.collapse.noConflict=function(){return t.fn.collapse=n,this},t(document).on("click.bs.collapse.data-api",'[data-toggle="collapse"]',function(s){var n=t(this);n.attr("data-target")||s.preventDefault();var o=e(n),a=o.data("bs.collapse"),r=a?"toggle":n.data();i.call(o,r)})}(jQuery),+function(t){"use strict";function e(i,s){this.$body=t(document.body),this.$scrollElement=t(t(i).is(document.body)?window:i),this.options=t.extend({},e.DEFAULTS,s),this.selector=(this.options.target||"")+" .nav li > a",this.offsets=[],this.targets=[],this.activeTarget=null,this.scrollHeight=0,this.$scrollElement.on("scroll.bs.scrollspy",t.proxy(this.process,this)),this.refresh(),this.process()}function i(i){return this.each(function(){var s=t(this),n=s.data("bs.scrollspy"),o="object"==typeof i&&i;n||s.data("bs.scrollspy",n=new e(this,o)),"string"==typeof i&&n[i]()})}e.VERSION="3.3.7",e.DEFAULTS={offset:10},e.prototype.getScrollHeight=function(){return this.$scrollElement[0].scrollHeight||Math.max(this.$body[0].scrollHeight,document.documentElement.scrollHeight)},e.prototype.refresh=function(){var e=this,i="offset",s=0;this.offsets=[],this.targets=[],this.scrollHeight=this.getScrollHeight(),t.isWindow(this.$scrollElement[0])||(i="position",s=this.$scrollElement.scrollTop()),this.$body.find(this.selector).map(function(){var e=t(this),n=e.data("target")||e.attr("href"),o=/^#./.test(n)&&t(n);return o&&o.length&&o.is(":visible")&&[[o[i]().top+s,n]]||null}).sort(function(t,e){return t[0]-e[0]}).each(function(){e.offsets.push(this[0]),e.targets.push(this[1])})},e.prototype.process=function(){var t,e=this.$scrollElement.scrollTop()+this.options.offset,i=this.getScrollHeight(),s=this.options.offset+i-this.$scrollElement.height(),n=this.offsets,o=this.targets,a=this.activeTarget;if(this.scrollHeight!=i&&this.refresh(),e>=s)return a!=(t=o[o.length-1])&&this.activate(t);if(a&&e<n[0])return this.activeTarget=null,this.clear();for(t=n.length;t--;)a!=o[t]&&e>=n[t]&&(void 0===n[t+1]||e<n[t+1])&&this.activate(o[t])},e.prototype.activate=function(e){this.activeTarget=e,this.clear();var i=this.selector+'[data-target="'+e+'"],'+this.selector+'[href="'+e+'"]',s=t(i).parents("li").addClass("active");s.parent(".dropdown-menu").length&&(s=s.closest("li.dropdown").addClass("active")),s.trigger("activate.bs.scrollspy")},e.prototype.clear=function(){t(this.selector).parentsUntil(this.options.target,".active").removeClass("active")};var s=t.fn.scrollspy;t.fn.scrollspy=i,t.fn.scrollspy.Constructor=e,t.fn.scrollspy.noConflict=function(){return t.fn.scrollspy=s,this},t(window).on("load.bs.scrollspy.data-api",function(){t('[data-spy="scroll"]').each(function(){var e=t(this);i.call(e,e.data())})})}(jQuery),+function(t){"use strict";function e(){var t=document.createElement("bootstrap"),e={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",transition:"transitionend"};for(var i in e)if(void 0!==t.style[i])return{end:e[i]};return!1}t.fn.emulateTransitionEnd=function(e){var i=!1,s=this;t(this).one("bsTransitionEnd",function(){i=!0});var n=function(){i||t(s).trigger(t.support.transition.end)};return setTimeout(n,e),this},t(function(){t.support.transition=e(),t.support.transition&&(t.event.special.bsTransitionEnd={bindType:t.support.transition.end,delegateType:t.support.transition.end,handle:function(e){return t(e.target).is(this)?e.handleObj.handler.apply(this,arguments):void 0}})})}(jQuery);</script>
+	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
+	<style>::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}body input:focus:required:invalid,body textarea:focus:required:invalid{color:#666}body input:required:valid,body textarea:required:valid{color:#666}body{font-size:14px;min-width:320px;position:relative;line-height:1.6;font-family:Abel,Helvetica,sans-serif;overflow-x:hidden;background-color:#fff}.navbar-default{border-bottom:none;opacity:.9}.navbar-default .navbar-brand{font-family:"Baloo Bhaina",Helvetica,sans-serif;font-size:2em;color:#4298e2;padding-left:4em}.navbar-default .navbar-brand:hover{color:#0072d5}@media screen and (max-width:980px){.navbar-default .navbar-brand{padding-left:1em}}@media screen and (max-width:833px){.navbar-default .navbar-brand{font-size:1.53em}}.navbar-default .navbar-nav li:hover{background:#4298e2;color:#fff;-webkit-transform:skewX(-30deg);-ms-transform:skewX(-30deg);transform:skewX(-30deg);border:none}.navbar-default .navbar-nav li a{font-family:roboto,Helvetica,sans-serif;font-size:1.2em;color:#4298e2}.navbar-default .navbar-nav li a:hover{-webkit-transform:skewX(30deg);-ms-transform:skewX(30deg);transform:skewX(30deg);color:#fff;border:none}.navbar-default .navbar-collapse{padding-right:4em}@media screen and (max-width:980px){.navbar-default .navbar-collapse ul{padding-right:1em}}.carousel{padding-top:50px}.carousel .carousel-indicators{margin-bottom:40px}.carousel .carousel-inner img{margin-left:auto;margin-right:auto;width:100%}.social .btn{border:2px solid #4298e2;margin-right:5px;margin-bottom:1em}.social .fa{color:#8b8b8b}.social .fa:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.sec-services{padding-top:4em}@media screen and (max-width:767px){.sec-services{padding-top:1.5em}}.sec-services h3{font-family:"Baloo Bhaina",Helvetica,sans-serif;color:#4298e2}.sec-services hr{width:50px;border-top:2px solid #8b8b8b}.sec-services p{min-height:12em;color:#8b8b8b}@media screen and (max-width:767px){.sec-services p{min-height:0}}.sec-services .block{margin-bottom:1em}.sec-services .services-wrapper{margin:.1em;padding:1em;background:rgba(0,0,0,.05);-webkit-border-radius:5px;border-radius:5px}.sec-services .services-wrapper:hover{background:rgba(235,255,246,.1)}.sec-services .ion{font-size:32px;color:#4298e2}.sec-services .icon{width:1em;height:1em;fill:#4298e2;font-size:2.8em}.sec-services .fork{margin-left:-.2em}.sec-services .knife{margin-left:-.6em}.sec-services .wineglass{margin-left:-.5em}.sec-services .ios-sunny{font-size:3.2em;margin-bottom:-.2em}.sec-services .facebook{font-size:2em}</style>
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);</script>
+	<!-- Load Fonts CSS Start -->
+	<script>
+		loadCSS( "css/fonts.min.css?ver=1.0.0", false, "all" ); // Loading fonts, if the site is located in a subfolder
+		// loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" ); // Loading fonts, if the site is at the root
+	</script>
+	<!-- Load Fonts CSS end -->
+	<!-- Load Custom CSS Start -->
+	
+	<script>loadCSS( "css/bootstrap.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/font-awesome.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load Custom CSS end -->
+	<!-- Load Custom CSS Compiled without JS Start -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+	<!-- Load Custom CSS Compiled without JS end -->
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Custom Browsers Color end -->
+</head>
+<body id="page-top">
+	<!-- header -->
+	<header class="sec-header">
+		<!-- navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="#"><em>Sunrise Hotel & Spa</em></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#about"><em>Home</em></a></li>
+						<li><a href="#services"><em>services</em></a></li>
+						<li><a href="#pricing"><em>pricing</em></a></li>
+						<li><a href="#gallery"><em>gallery</em></a></li>
+						<li><a href="#contact"><em>contact</em></a></li>
+					</ul> 
+				</div>
+			</div>
+		</nav><!-- navbar end -->
+		<!-- carousel -->
+		<div id="myCarousel" class="carousel slide text-center slideanim" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active text-center">
+					<img src="img/carousel/carousel1.jpg" alt="" >
+				</div>
+				<div class="item">
+					<img src="img/carousel/carousel2.jpg" alt="" >
+				</div>
+				<div class="item">
+					<img src="img/carousel/carousel3.jpg" alt="" >
+				</div>
+			</div><br>
+		</div><!-- carousel end -->
+		<!-- social button -->
+		<div class="social text-center">
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+			<a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a><br><br><br>
+		</div><!-- social button end-->
+	</header><!-- header end-->
+	<!-- services -->
+	<div id="services" class="container sec-services">
+	 	<h3 class="text-center text-uppercase slideanim">Our services</h3><hr>
+	 	<br>
+	 	<div class="row slideanim">
+	    	<div class="col-sm-4 block">
+	    		<div class="services-wrapper">
+							<svg class="icon ios-flower">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#ios-flower"></use>
+							</svg>							
+							<svg class="icon facebook">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#facebook"></use>
+							</svg>							
+		      		<h4>Spa</h4>
+		      		<p>With design inspired by traditional local embroidery and fabrics, this calming space is dominated by light blue colour. Intentionally sub-lit, with diffused, indirect lighting to sustain a sense of relaxation, it offers the latest in natural massage and experiences, while using organic herbs from the island. The pool area and the juice bar nearby are just two of the highlights that await you.</p>
+		    	</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+							<svg class="icon fork">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#fork"></use>
+							</svg>
+							<svg class="icon knife">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#knife"></use>
+							</svg>
+							<svg class="icon wineglass">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#wineglass"></use>
+							</svg>
+	      			<h4>Restaurant & Bars</h4>
+	      			<p>Adopting a modern approach to authentic Mediterranean fare, the Royal Myconian Resort’s two fine restaurants and three bars offer a range of inspired selections that emphasize purity, simplicity, authentic Mykonos specialties and seasonal flavors in a stylish ambiance with stunning views, creating a truly unique culinary experience.</p>
+	      		</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+							<svg class="icon swimmer">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#swimmer"></use>
+							</svg>							
+							<h4>Pool</h4>
+	      			<p>Long leisurely strolls in the gentle surf and lazy days splashing around the pool’s shimmering turquoise waters will refresh and rejuvenate you - body and soul.
+					• Large seawater pool (700m2) with Jacuzzi, lily-pad designer sun loungers, day beds
+					• Sun terraces</p>
+	      		</div>
+	    	</div>
+	  	</div>
+	  	<div class="row slideanim">
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+							<svg class="icon model-s">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#model-s"></use>
+							</svg>
+	      			<h4>Free Parking</h4>
+	      			<p>Free! Free private parking is available on site (reservation is not needed).</p>
+	      		</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+	      		<div class="services-wrapper">
+							<svg class="icon wifi">
+								<use xlink:href="img/svg-optim/svg/symbols.svg#wifi"></use>
+							</svg>
+	      			<h4>Free WiFi</h4>
+	      			<p>Free! WiFi is available in all areas and is free of charge.</p>
+	      		</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+				<div class="services-wrapper">
+					<svg class="icon android-bus">
+						<use xlink:href="img/svg-optim/svg/symbols.svg#android-bus"></use>
+					</svg>
+					<h4>Airport Shuttle</h4>
+					<p>Lorem ipsum dolor sit amet..Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+				</div>
+	    	</div>
+	  	</div>
+	  	<div class="row slideanim">
+			<div class="col-sm-4 block">
+				<div class="services-wrapper">
+					<svg class="icon ios-sunny">
+						<use xlink:href="img/svg-optim/svg/symbols.svg#ios-sunny"></use>
+					</svg>				
+					<h4>Beach</h4>
+					<p>The hotel is situated directly on a 300m of beach. Curl up with the kids under a cabana by the sea, watch the most amazing sunset in Crete and relax.
+					Beach Free facilities include: Beach towels, Showers & changing cabins, Umbrellas & sun beds with soft mattresses.</p>
+				</div>
+			</div>
+	    	<div class="col-sm-4 block">
+				<div class="services-wrapper">
+					<svg class="icon android-walk">
+						<use xlink:href="img/svg-optim/svg/symbols.svg#android-walk"></use>
+					</svg>	
+					<h4>Sports</h4>
+					<p>• Canoes, pedal boats
+					• PADI Underwater Diving school with children, teenager and adult lessons, excursions, windsurfing and motorized watersports (nearby)s.• Morning gymnastics
+					• Aqua-aerobics
+					• Aerobics
+					• Table tennis</p>
+				</div>
+	    	</div>
+	    	<div class="col-sm-4 block">
+					<div class="services-wrapper">
+						<svg class="icon gear-a">
+							<use xlink:href="img/svg-optim/svg/symbols.svg#gear-a"></use>
+						</svg>	
+						<h4>Others services</h4>
+						<p>• Directly on a fine stretch of sandy beach
+						• Large landscaped pool<br>
+						• A relaxed Holiday Atmosphere<br>
+						• Atmospheric Suites, Maisonettes & Villas with luxurious eccentric overtones<br>
+						• Choice of excellent dining options & Agreco farm culinary experience<br>
+						• Tasty Corner - free kids dining<br>
+						</p>
+					</div>
+	    	</div>
+	  	</div>
+	</div><!-- services end -->
+  <!--  pricing  -->
+  <div id="pricing" class="container sec-pricing">
+		<h3 class="text-center text-uppercase slideanim">Pricing</h3><hr>
+	  <div class="row slideanim">
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>199</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>night</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div> 
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center popular">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>249</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>weekend</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div>
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>1199</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>week</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div> 
+			<div class="col-sm-3 sec-panel">
+				<div class="panel panel-default text-center">
+					<div class="panel-heading">
+						<h4><strong><sup>$</sup>4999</strong></h4>
+					</div>
+					<div class="panel-body">
+						<h5 class="text-uppercase"><strong>month</strong></h5>
+					</div>
+					<div class="panel-footer">
+						<span class="ion-coffee"> breakfast included</span><br><br>
+						<span class="ion-ios-snowy"> Special Conditions</span><br><br>
+						<button class="btn btn-md text-uppercase">reserve</button>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div><!--  pricing end -->
+	<!-- gallery -->
+	<div id="gallery" class="container text-center sec-gallery">
+		<h3 class="text-uppercase slideanim">gallery</h3><hr><br>
+		<button class="btn btn-default filter-button active text-uppercase" data-filter="all" >all</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="rooms">rooms</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="fd">food & drink</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="pool">pool & spa</button>
+		<button class="btn btn-default filter-button  text-uppercase" data-filter="beach">beach</button>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter rooms">
+				<button class="btn" data-toggle="modal" data-target="#myModal2">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/rooms/rooms1.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal1" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/rooms/rooms1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter rooms">
+				<button class="btn" data-toggle="modal" data-target="#myModal2">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/rooms/rooms2.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal2" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/rooms/rooms2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter rooms">
+				<button class="btn" data-toggle="modal" data-target="#myModal3">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/rooms/rooms3.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal3" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/rooms/rooms3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter rooms">
+				<button class="btn" data-toggle="modal" data-target="#myModal4">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/rooms/rooms4.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal4" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/rooms/rooms4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter fd">
+				<button class="btn" data-toggle="modal" data-target="#myModal5">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/food/food1.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal5" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/food/food1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter fd">
+				<button class="btn" data-toggle="modal" data-target="#myModal6">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/food/food2.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal6" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/food/food2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter fd">
+				<button class="btn" data-toggle="modal" data-target="#myModal7">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/food/food3.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal7" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/food/food3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter fd">
+				<button class="btn" data-toggle="modal" data-target="#myModal8">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/food/food4.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal8" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/food/food4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	 
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal9">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa1.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal9" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_10">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa2.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal_10" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_11">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa3.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal_11" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_12">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa4.jpg" class="img-responsive" alt="">
+					</div>
+				</button>
+				<div id="myModal_12" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_13">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa5.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_13" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa5.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_14">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa6.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_14" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa6.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter  pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_15">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa7.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_15" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa7.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter pool">
+				<button class="btn" data-toggle="modal" data-target="#myModal_16">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/spa/spa8.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_16" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/spa/spa8.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row slideanim">
+			<div class="col-sm-6 col-md-3 filter beach">
+				<button class="btn" data-toggle="modal" data-target="#myModal_17">
+					<div class="thumbnail">
+					<img src="img/gallery/thumbnail/beach/beach1.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_17" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/beach/beach2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter beach">
+				<button class="btn" data-toggle="modal" data-target="#myModal_18">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/beach/beach2.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_18" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/beach/beach2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter beach">
+				<button class="btn" data-toggle="modal" data-target="#myModal_19">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/beach/beach3.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_19" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/beach/beach3.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 filter beach">
+				<button class="btn" data-toggle="modal" data-target="#myModal_20">
+					<div class="thumbnail">
+						<img src="img/gallery/thumbnail/beach/beach4.jpg" alt="">
+					</div>
+				</button>
+				<div id="myModal_20" class="modal fade" role="dialog">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<div class="thumbnail">
+									<img src="img/gallery/beach/beach4.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- gallery end -->
+	<!-- contact -->
+	<div id="contact" class="container slideanim sec-contact">
+		<h3 class="text-center text-uppercase slideanim ">Contact Details</h3>
+		<hr/>
+		<div class="row">		
+			<div class="col-sm-4 contacts">
+				<div class="wrap">
+					<h4>We are social</h4>
+					<p>Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.</p>
+					<button type="button" class="btn btn-md">facebook</button>
+					<button type="button" class="btn btn-md">twitter</button>
+					<button type="button" class="btn btn-md">google+</button>
+				</div>
+			</div>
+			<div class="col-sm-4 contacts">
+				<div class="wrap">
+					<h4>Quick Contact</h4>
+					<p><strong>Email:</strong>info@sunrise-spa.com</p>
+					<p><strong>Call:</strong> +09-88-99-77-55 </p>
+					<p><strong>Skype:</strong>sunrise-spa</p>
+				</div>
+			</div>
+			<div class="col-sm-4 contacts">
+				<div class="wrap">
+					<h4>Address</h4>
+					<p>230/45 , New way Lane ,United States </p>
+					<p><small>© 2015 Pospeliri Team</small></p>
+				</div>
+			</div>
+		</div>
+	</div><!-- contact end-->
+	<!-- Optimized loading JS Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.min.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Optimized loading JS end -->
+	<!-- SVG4everebody -->
+	<script>!function(a,b){"function"==typeof define&&define.amd?define([],function(){return a.svg4everybody=b()}):"object"==typeof module&&module.exports?module.exports=b():a.svg4everybody=b()}(this,function(){function a(a,b,c){if(c){var d=document.createDocumentFragment(),e=!b.hasAttribute("viewBox")&&c.getAttribute("viewBox");e&&b.setAttribute("viewBox",e);for(var f=c.cloneNode(!0);f.childNodes.length;)d.appendChild(f.firstChild);a.appendChild(d)}}function b(b){b.onreadystatechange=function(){if(4===b.readyState){var c=b._cachedDocument;c||(c=b._cachedDocument=document.implementation.createHTMLDocument(""),c.body.innerHTML=b.responseText,b._cachedTarget={}),b._embeds.splice(0).map(function(d){var e=b._cachedTarget[d.id];e||(e=b._cachedTarget[d.id]=c.getElementById(d.id)),a(d.parent,d.svg,e)})}},b.onreadystatechange()}function c(c){function e(){for(var c=0;c<o.length;){var h=o[c],i=h.parentNode,j=d(i);if(j){var k=h.getAttribute("xlink:href")||h.getAttribute("href");!k&&g.attributeName&&(k=h.getAttribute(g.attributeName));if(f)if(!g.validate||g.validate(k,j,h)){i.removeChild(h);var l=k.split("#"),q=l.shift(),r=l.join("#");if(q.length){var s=m[q];s||(s=m[q]=new XMLHttpRequest,s.open("GET",q),s.send(),s._embeds=[]),s._embeds.push({parent:i,svg:j,id:r}),b(s)}else a(i,j,document.getElementById(r))}else++c,++p}else++c}(!o.length||o.length-p>0)&&n(e,67)}var f,g=Object(c),h=/\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/,i=/\bAppleWebKit\/(\d+)\b/,j=/\bEdge\/12\.(\d+)\b/,k=/\bEdge\/.(\d+)\b/,l=window.top!==window.self;f="polyfill"in g?g.polyfill:h.test(navigator.userAgent)||(navigator.userAgent.match(j)||[])[1]<10547||(navigator.userAgent.match(i)||[])[1]<537||k.test(navigator.userAgent)&&l;var m={},n=window.requestAnimationFrame||setTimeout,o=document.getElementsByTagName("use"),p=0;f&&e()}function d(a){for(var b=a;"svg"!==b.nodeName.toLowerCase()&&(b=b.parentNode););return b}return c});
+	</script>
+	<script>
+	$(document).on('click', function(event){
+      var $clickedOn = $(event.target),
+          $collapsableItems = $('.collapse'),
+          isToggleButton = ($clickedOn.closest('.navbar-toggle').length == 1),
+          isLink = ($clickedOn.closest('a').length == 1),
+          isOutsideNavbar = ($clickedOn.parents('.navbar').length == 0);
+
+      if( (!isToggleButton && isLink) || isOutsideNavbar ) {
+        $collapsableItems.each(function(){
+          $(this).collapse('hide');
+        });
+      }
+    });
+	</script>
+</body>
+</html>
